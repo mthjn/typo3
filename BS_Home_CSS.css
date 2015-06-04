@@ -1,0 +1,136 @@
+/*
+*    GENERAL
+*/
+@font-face{font-family:'Glyphicons Halflings';src:url('http://localhost/bs/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.eot');src:url('http://localhost/bs/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('http://localhost/bs/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.woff') format('woff'),url('../../../../../typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.ttf') format('truetype'),url('../../../../../typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300&subset=latin,cyrillic-ext);
+body {
+  font-family: 'Roboto', Arial, sans;
+}
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+a {
+  color: #000;
+  text-decoration: underline;
+}
+/*
+*    Navigation
+*/
+.navbar-default {
+  background-color: #000329;
+  border-color: transparent;
+  height: 100px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  font-family: 'Roboto', sans;
+  text-decoration:none;
+  -webkit-transition: all 0.4s ease-in-out 0s,opacity 0.25s ease-in-out;
+  -o-transition: all 0.4s ease-in-out 0s,opacity 0.25s ease-in-out;
+  transition: all 0.4s ease-in-out 0s,opacity 0.25s ease-in-out;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #ffffff;
+  background: rgba(255,255,255,0.1);
+}
+/* Logo */
+.navbar-header-main .navbar-brand {
+  line-height: 140px;
+  height: 100px;
+  -webkit-transition: opacity 0.15s ease-in-out 0s;
+  -o-transition: opacity 0.15s ease-in-out 0s;
+  transition: opacity 0.15s ease-in-out 0s;
+  background: #ef7c00;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #333333;
+  background-color: #ef7c00;
+}
+.navbar-header-main .navbar-brand.navbar-brand-image>img {
+  display: inline;
+  margin: 0 22px;
+}
+.navbar-main>li>a .bar {visibility:hidden;}
+/* Breadcrumb */
+.breadcrumb-section, .breadcrumb {
+  font-family: 'Roboto';
+  background-color: white;
+  border-bottom: 0px solid #eeeeee;
+  margin-bottom: 24px;
+  font-size: 9px
+}
+/*
+      GRID AND ALL
+*/
+/*#agp-top {background:yellow}
+#grid1 {background:blue}*/
+#separator p {
+font-family: 'Roboto';
+font-size:15px;
+font-weight:300;
+margin-top: 50px;
+margin-bottom: 50px;
+text-transform:uppercase;
+padding:0 25px;
+text-align:right;
+}
+#agphome img{width:100%}
+
+.ad2,.ad1 {text-align: center;padding:25px}
+.ad1 img,.ad2 img{width:auto !important;margin:0 auto}
+
+
+.top{padding:0 !important}
+
+hr {border-top: 1px solid #999;}
+
+.whiteoverlay{position:absolute;top: 350px;padding: 20px;background: rgba(255,255,255,0.7);width: 100%;font-size: 15px;letter-spacing: 0.04em;}
+.whiteoverlay a{font-weight:800}
+.orangeoverlay{position:absolute;bottom:0;padding:5px;background:#f4983e;font-size:18px;text-transform:uppercase;color:white;font-family:'Roboto';font-weight:300;letter-spacing: 0.08em;}
+
+/* desktop only*/
+#grid1,#grid2,#grid3,#grid4,#grid5 {margin-bottom:25px}
+
+.gr{padding:0;padding-left:5px;}
+#grid1 .gr:first-of-type,
+#grid2 .gr:first-of-type,
+#grid3 .gr:first-of-type,
+#grid4 .gr:first-of-type,
+#grid5 .gr:first-of-type{margin-left:-2px;}
+
+/* Footer */
+.meta-section {
+  color: #ffffff;
+  border-top: 0px solid #2b2b2b;
+  background-color: #000329;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Roboto';
+  text-transform:uppercase;
+}
+.meta-section .active a, .meta-section a {
+  color: white;
+  text-decoration:none;
+}
+.meta-section .copyright {
+  text-align: left;
+  padding: 60px 10px 20px 10px;
+  letter-spacing: 0.1em;
+}
+.meta-section .language {
+  text-align: right;
+  padding: 60px 10px 20px 10px;
+  background: #ef7c00;
+  letter-spacing: 0.1em;
+
+}
+/*
+*        Media
+*/
+@media (min-width: 992px){
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 0}}
+@media (min-width: 992px) {.navbar-main>li>a {line-height: 100px;}}
