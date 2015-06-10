@@ -1,0 +1,22 @@
+======
+## try
+======
+
+
+### static
+
++ fileadmin/templates/basis.css 	glyphicons linked static to agp-web.witwerk.de
+
+
+### new constants
+
+agp-web.witwerk.de/try/typo3conf/ext/bootstrap_package/Configuration/TypoScript
+
+  DEFINED		PLACEMENT						ASSIGNED
+  themeNachObenText 	Resources/Private/Partials/Page/Structure/Footer.html	root template / constants
+  themeUpperMenuText	Resources/Private/Partials/Page/Navigation/Main.html	root template / constants
+
+
+### notes
+
+HTML format of the constant 	<f:format.html>
