@@ -1,7 +1,13 @@
 /*
 *    GENERAL
 */
-@font-face{font-family:'Glyphicons Halflings';src:url('http://localhost/bs/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.eot');src:url('http://localhost/bs/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('http://localhost/bs/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.woff') format('woff'),url('../../../../../typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.ttf') format('truetype'),url('../../../../../typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')}
+@font-face{font-family:'Glyphicons Halflings';
+src:url('http://agp-web.witwerk.de/try/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.eot');
+src:url('http://agp-web.witwerk.de/try/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+url('http://agp-web.witwerk.de/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.woff') format('woff'),
+url('http://agp-web.witwerk.de/try/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+url('http://agp-web.witwerk.de/try/typo3conf/ext/bootstrap_package/Resources/Public/Fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')}
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300&subset=latin,cyrillic-ext);
 body {
   font-family: 'Roboto', Arial, sans;
