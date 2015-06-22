@@ -10,24 +10,33 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-        <script>
-            $(document).ready(function(){
+<script>
+/* gets hashed URL, uses the hash as data-param
+/* TYPO3 cannot handle regular anchor links with parameters -> this not feasible
+    $(document).ready(function(){
+      var hash = location.hash;
 
-                var hash = location.hash;
+    if(hash){
+    $('.content_item').hide("slow").filter('[data-item="'+hash.substr(1)+'"]').show("slow");
+    }
+    $('.select_item').click(function(){
+      var item = $(this).attr('data-item');
 
-                if(hash){
-                    $('.content_item').hide("slow").filter('[data-item="'+hash.substr(1)+'"]').show("slow");
-                }
-
-                $('.select_item').click(function(){
-                    var item = $(this).attr('data-item');
-
-                    $('.content_item').hide("slow").filter('[data-item="'+item+'"]').show("slow");
-                    window.location.hash = item;
-                    return false;
-                });
-            });
-        </script>
+      $('.content_item').hide("slow").filter('[data-item="'+item+'"]').show("slow");
+      window.location.hash = item;
+      return false;
+      });
+    });
+*/
+/* no URL anchor, typo3 friendly */
+$(document).ready(function(){
+  $('.select_item').click(function(){
+      var ditem = $(this).attr('data-item');
+      $('.content_item').hide("slow").filter( '[data-item="'+ditem+'"]' ).show("slow");
+      return false;
+      });
+});
+</script>
 
 
 <style media="screen">
