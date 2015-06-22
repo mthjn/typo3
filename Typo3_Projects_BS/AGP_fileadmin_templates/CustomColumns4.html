@@ -1,0 +1,133 @@
+<div class="body-bg{f:if(condition:themeNavigationtype, then:' body-bg-{themeNavigationtype}')}">
+	<f:link.page class="sr-only sr-only-focusable" section="content">
+		{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}
+	</f:link.page>
+	<f:if condition="{showHeader}">
+		<f:render partial="Navigation/Main" arguments="{_all}"/>
+		<f:cObject typoscriptObjectPath="lib.navigation.breadcrumb"/>
+	</f:if>
+	<!--TYPO3SEARCH_begin-->
+	<div id="content" class="main-section">
+
+
+			<f:layout name="Default"/>
+					<f:section name="Main">
+
+					 <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3'}"/>
+						<div class="container">
+							<div class="row">
+
+								<div class="col-sm-3">
+									<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '20'}"/>
+									<f:format.raw>{agptop1}</f:format.raw>
+								</div>
+								<div class="col-sm-3">
+									<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '21'}"/>
+									<f:format.raw>{agptop2}</f:format.raw>
+								</div>
+								<div class="col-sm-3">
+									<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '22'}"/>
+									<f:format.raw>{agptop3}</f:format.raw>
+								</div>
+					      <div class="col-sm-3">
+									<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '23'}"/>
+									<f:format.raw>{agptop4}</f:format.raw>
+								</div>
+
+							</div>
+
+						 <div class="row">
+							<div class="container">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '24'}"/>
+								<f:format.raw>{agpmid1}</f:format.raw>
+							</div>
+					  </div>
+
+						<div class="row">
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '30'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '31'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '32'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '33'}"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '34'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '35'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '36'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '37'}"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '38'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '39'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '40'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '41'}"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '42'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '43'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '44'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '45'}"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '46'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '47'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '48'}"/>
+							</div>
+							<div class="col-sm-3">
+								<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '49'}"/>
+							</div>
+						</div>
+
+						</div>
+
+					</f:section>
+
+			</div>
+
+
+
+<!--TYPO3SEARCH_end-->
+<f:if condition="{showFooter}">
+	<f:render partial="Structure/Footer" arguments="{_all}"/>
+</f:if>
+</div>
