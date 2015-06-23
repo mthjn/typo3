@@ -1,0 +1,66 @@
+======
+## try
+======
+
+
+### static
+
++ fileadmin/templates/basis.css 	glyphicons linked static to agp-web.witwerk.de
+					#fliesenul li static
+
+### new constants
+
+$HOME/typo3conf/ext/bootstrap_package/Configuration/TypoScript
+
+  DEFINED		PLACEMENT						ASSIGNED
+  themeNachObenText 	Resources/Private/Partials/Page/Structure/Footer.html	root template / constants
+  themeUpperMenuText	Resources/Private/Partials/Page/Navigation/Main.html	root template / constants
+
+
+### notes
+
+HTML format of the constant 	<f:format.html>
+
+
+#####  Projekte - Subsite
+Images in fileadmin/projekte
+
+
+
+
+
+
+
+
+Change CSS for specific page
+****************************
+// Page id -- top right corn
+
+[globalVar = TSFE:id = 29]
+
+page {
+  headerData{
+    10 = TEXT
+    10.value = <link rel="icon" type="image/png" href="fileadmin/ico/favicon.png" />
+
+    11 = TEXT
+    11{
+      field = subtitle // title
+      noTrimWrap = |<title>| AGP Bauzentrum</title>|
+    }
+  }
+}
+page.includeCSS {
+ file1 = fileadmin/templates/projekte.css
+ file2 = fileadmin/templates/basic.css
+}
+
+[global]
+
+
+***
+
+background: url( $LINK );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
