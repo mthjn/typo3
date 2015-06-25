@@ -1,0 +1,331 @@
+########################################
+#### BACKENDLAYOUT: AGPHOME 					##
+########################################
+mod {
+	web_layout {
+		BackendLayouts {
+			special_feature {
+				title = agp_home
+				config {
+					backend_layout {
+						colCount = 4
+						rowCount = 14
+						rows {
+							1 {
+								columns {
+									1 {
+										name = Oneliner_MobileOnly
+										colPos = 1000
+										colspan = 4
+									}
+
+								}
+							}
+							2 {
+								columns {
+									1 {
+										name = Image_Ad1
+										colPos = 100
+										colspan = 1
+									}
+									2 {
+										name = Image_Catch1
+										colPos = 200
+										colspan = 1
+									}
+									3 {
+										name = Image_Catch2
+										colPos = 300
+										colspan = 1
+									}
+									4 {
+										name = Image_Catch3
+										colPos = 400
+										colspan = 1
+									}
+								}
+							}
+							3 {
+								columns {
+									1 {
+										name = Image_Ad2
+										colPos = 101
+										colspan = 1
+									}
+									2 {
+										name = TextOverlay_Catch1
+										colPos = 201
+										colspan = 1
+									}
+									3 {
+										name = TextOverlay_Catch2
+										colPos = 301
+										colspan = 1
+									}
+									4 {
+										name = TextOverlay_Catch3
+										colPos = 401
+										colspan = 1
+									}
+								}
+							}
+							4 {
+								columns {
+									1 {
+										name = Oneliner_DesktopOnly
+										colPos = 1001
+										colspan = 4
+									}
+
+								}
+							}
+							5 {
+								columns {
+									1 {
+										name = Image_Product1
+										colPos = 31
+										colspan = 1
+									}
+									2 {
+										name = Image_Product2
+										colPos = 33
+										colspan = 1
+									}
+									3 {
+										name = Image_Product3
+										colPos = 35
+										colspan = 1
+									}
+									4 {
+										name = Image_Product4
+										colPos = 37
+										colspan = 1
+									}
+								}
+							}
+							6 {
+								columns {
+									1 {
+										name = TitleOverlay_Product1
+										colPos = 32
+										colspan = 1
+									}
+									2 {
+										name = TitleOverlay_Product2
+										colPos = 34
+										colspan = 1
+									}
+									3 {
+										name = TitleOverlay_Product3
+										colPos = 36
+										colspan = 1
+									}
+									4 {
+										name = TitleOverlay_Product4
+										colPos = 38
+										colspan = 1
+									}
+								}
+							}
+							7 {
+								columns {
+									1 {
+										name = Image_Product5
+										colPos = 41
+										colspan = 1
+									}
+									2 {
+										name = Image_Product6
+										colPos = 43
+										colspan = 1
+									}
+									3 {
+										name = Image_Product7
+										colPos = 45
+										colspan = 1
+									}
+									4 {
+										name = Image_Product8
+										colPos = 47
+										colspan = 1
+									}
+								}
+							}
+							8 {
+								columns {
+									1 {
+										name = TitleOverlay_Product5
+										colPos = 42
+										colspan = 1
+									}
+									2 {
+										name = TitleOverlay_Product6
+										colPos = 44
+										colspan = 1
+									}
+									3 {
+										name = TitleOverlay_Product7
+										colPos = 46
+										colspan = 1
+									}
+									4 {
+										name = TitleOverlay_Product8
+										colPos = 48
+										colspan = 1
+									}
+								}
+							}
+							9 {
+								columns {
+									1 {
+										name = Image_Product9
+										colPos = 51
+										colspan = 1
+									}
+									2 {
+										name = Image_Product10
+										colPos = 53
+										colspan = 1
+									}
+									3 {
+										name = Image_Product11
+										colPos = 55
+										colspan = 1
+									}
+									4 {
+										name = Image_Product12
+										colPos = 57
+										colspan = 1
+									}
+								}
+							}
+							10 {
+								columns {
+									1 {
+										name = TitleOverlay_Product9
+										colPos = 52
+										colspan = 1
+									}
+									2 {
+										name = TitleOverlay_Product10
+										colPos = 54
+										colspan = 1
+									}
+									3 {
+										name = TitleOverlay_Product11
+										colPos = 56
+										colspan = 1
+									}
+									4 {
+										name = TitleOverlay_Product12
+										colPos = 58
+										colspan = 1
+									}
+								}
+							}
+							11 {
+								columns {
+									1 {
+										name = Image_Product13
+										colPos = 61
+										colspan = 1
+									}
+									2 {
+										name = Image_Product14
+										colPos = 63
+										colspan = 1
+									}
+									3 {
+										name = Image_Product15
+										colPos = 65
+										colspan = 1
+									}
+									4 {
+										name = Image_Product16
+										colPos = 67
+										colspan = 1
+									}
+								}
+							}
+							12 {
+								columns {
+									1 {
+										name = TitleOverlay_Product13
+										colPos = 62
+										colspan = 1
+									}
+									2 {
+										name = TitleOverlay_Product14
+										colPos = 64
+										colspan = 1
+									}
+									3 {
+										name = TitleOverlay_Product15
+										colPos = 66
+										colspan = 1
+									}
+									4 {
+										name = TitleOverlay_Product16
+										colPos = 68
+										colspan = 1
+									}
+								}
+							}
+							13 {
+								columns {
+									1 {
+										name = Image_Product17
+										colPos = 71
+										colspan = 1
+									}
+									2 {
+										name = Image_Product18
+										colPos = 73
+										colspan = 1
+									}
+									3 {
+										name = Image_Product19
+										colPos = 75
+										colspan = 1
+									}
+									4 {
+										name = Image_Product20
+										colPos = 77
+										colspan = 1
+									}
+								}
+							}
+							14 {
+								columns {
+									1 {
+										name = TitleOverlay_Product17
+										colPos = 72
+										colspan = 1
+									}
+									2 {
+										name = TitleOverlay_Product18
+										colPos = 74
+										colspan = 1
+									}
+									3 {
+										name = TitleOverlay_Product19
+										colPos = 76
+										colspan = 1
+									}
+									4 {
+										name = TitleOverlay_Product20
+										colPos = 78
+										colspan = 1
+									}
+								}
+							}
+
+						}
+					}
+				}
+
+				icon = EXT:bootstrap_package/Resources/Public/Images/BackendLayouts/agphome.gif
+			}
+		}
+	}
+}
