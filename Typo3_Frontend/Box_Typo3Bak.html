@@ -1,0 +1,132 @@
+<!-- Scripts -->
+<!--
+// and jquery-1.11.3.min.js
+$(document).ready(function(){
+  $('#plus').click(function( ){
+    $('#fliesen').fadeToggle("fast");
+    $('#plusminus').toggleClass("shift");
+    $('#slimpanel').toggleClass("shiftslim");
+   });
+});
+
+ var bgs = [
+           "url('fileadmin/img-fliesen/AGP_Fliesen_Sub0.jpg')",
+           "url('fileadmin/img-fliesen/AGP_Fliesen_Sub1.jpg')",
+           "url('fileadmin/img-fliesen/AGP_Fliesen_Sub2.jpg')",
+           "url('fileadmin/img-fliesen/AGP_Fliesen_Sub3.jpg')",
+           "url('fileadmin/img-fliesen/AGP_Fliesen_Sub4.jpg')",
+           "url('fileadmin/img-fliesen/AGP_Fliesen_Sub5.jpg')",
+           ];
+
+
+ $(document).ready(function(){
+  $('.select_item').click(function( ){
+    var ditem = $(this).attr('data-item');
+
+    $('.content_item').hide("slow").filter( '[data-item="'+ditem+'"]' ).show("slow");
+
+    var bgimage;
+
+    switch( ditem ) {
+      case "p1":
+        bgimage = bgs[0];
+        break;
+      case "p2":
+        bgimage = bgs[1];
+        break;
+      case "p3":
+        bgimage = bgs[2];
+        break;
+      case "p4":
+        bgimage = bgs[3];
+        break;
+      case "p5":
+        bgimage = bgs[4];
+        break;
+      case "p6":
+        bgimage = bgs[5];
+        break;
+    }
+
+      $('#content').css({"background-image" : bgimage});
+       return false;
+   });
+});
+
+-->
+<!-- CSS -->
+<!--
+#slimpanel{
+-webkit-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+-moz-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+-ms-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+-o-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+}
+.shift {left:-30px!important}
+.shiftslim{left:0!important}
+-->
+<!-- Slimpanel -->
+<div id="slimpanel" class="">
+  <div><a class="select_item" data-item="p1"><img src="fileadmin/img-fliesen/AGP_Fliesen_0-50.png"></a></div>
+  <div><a class="select_item" data-item="p2"><img src="fileadmin/img-fliesen/AGP_Fliesen_1-50.jpg"></a></div>
+  <div><a class="select_item" data-item="p3"><img src="fileadmin/img-fliesen/AGP_Fliesen_2-50.jpg"></a></div>
+  <div><a class="select_item" data-item="p4"><img src="fileadmin/img-fliesen/AGP_Fliesen_3-50.jpg"></a></div>
+  <div><a class="select_item" data-item="p5"><img src="fileadmin/img-fliesen/AGP_Fliesen_4-50.jpg"></a></div>
+  <div id="last">
+    <a class="select_item" data-item="p6"><img src="fileadmin/img-fliesen/AGP_Fliesen_5-50.jpg"></a>
+  </div>
+</div>
+<!-- Fliesen -->
+<div id="fliesen" style="visibility:visible;">
+
+  <div id="projekte-1" class="content_item" data-item="p1">
+
+    <h1>AGP -<br /><b> Fliesen </b></h1>
+     <p>Fliesen sind mehr als die Oberfläche in Bad und Wohnung, am Boden un den Wänden. Sie gestalten Räume. Unsere Fliesenmuster geben Ihnen den Vorgeschmack für Ihre Gestaltung. </p>
+     <ul>
+     <li><b>Fliesen/Mosaik =</b><br />Marazzi, Emil, Grohn, American Tile, ABK, Jasba, Miku, Villeroy&amp;Boch
+     <img class="img-responsive" src="fileadmin/projekte/AGP_Logos.png"></li>
+     <li><b>Silikone und Bauchemische Produkte =</b><br />PCI, Schomburg</li>
+     <li><b>Schienen, Drainagen usw. =</b><br />
+    Schlüter System</li> </ul>
+  </div>
+  <div id="projekte-2" class="content_item" data-item="p2">
+    <h1>AGP -<br /><b> Lorem ipsum</b></h1>
+    <p>Lorem ipsum dolor sit amet, sed no iudico deleniti, ignota labore omittantur id usu. Laboramus adolescens appellantur eu qui, postea consetetur vix cu.
+      Lorem eripuit et mei, sit illud semper minimum ea, eu diam utinam definitionem mei. Tritani recusabo partiendo ne eos. Usu docendi invenire cu.</p>
+  </div>
+  <div id="projekte-3" class="content_item" data-item="p3">
+    <h1>AGP -<br /><b> Dolor sit</b></h1>
+    <p>Lorem ipsum dolor sit amet, sed no iudico deleniti, ignota labore omittantur id usu. Laboramus adolescens appellantur eu qui, postea consetetur vix cu.
+      Lorem eripuit et mei, sit illud semper minimum ea, eu diam utinam definitionem mei. Tritani recusabo partiendo ne eos. Usu docendi invenire cu.</p>
+  </div>
+  <div id="projekte-4" class="content_item" data-item="p4">
+    <h1>AGP -<br /><b> Amet</b></h1>
+    <p>Lorem ipsum dolor sit amet, sed no iudico deleniti, ignota labore omittantur id usu. Laboramus adolescens appellantur eu qui, postea consetetur vix cu.
+      Lorem eripuit et mei, sit illud semper minimum ea, eu diam utinam definitionem mei. Tritani recusabo partiendo ne eos. Usu docendi invenire cu.</p>
+  </div>
+  <div id="projekte-5" class="content_item" data-item="p5">
+    <h1>AGP -<br /><b> Trockenbau</b></h1>
+    <p>Lorem ipsum dolor sit amet, sed no iudico deleniti, ignota labore omittantur id usu. Laboramus adolescens appellantur eu qui, postea consetetur vix cu.
+      Lorem eripuit et mei, sit illud semper minimum ea, eu diam utinam definitionem mei. Tritani recusabo partiendo ne eos. Usu docendi invenire cu.</p>
+  </div>
+  <div id="projekte-6" class="content_item" data-item="p6">
+    <h1>AGP -<br /><b> Projekte 6</b></h1>
+    <p>Lorem ipsum dolor sit amet, sed no iudico deleniti, ignota labore omittantur id usu. Laboramus adolescens appellantur eu qui, postea consetetur vix cu.
+      Lorem eripuit et mei, sit illud semper minimum ea, eu diam utinam definitionem mei. Tritani recusabo partiendo ne eos. Usu docendi invenire cu.</p>
+  </div>
+</div>
+<!-- Preload images -->
+<style type="text/css">
+.preload-images {
+background:
+        url('fileadmin/img-fliesen/AGP_Fliesen_Sub0.jpg') no-repeat -9999px -9999px,
+        url('fileadmin/img-fliesen/AGP_Fliesen_Sub1.jpg') no-repeat -9999px -9999px,
+        url('fileadmin/img-fliesen/AGP_Fliesen_Sub2.jpg') no-repeat -9999px -9999px,
+        url('fileadmin/img-fliesen/AGP_Fliesen_Sub3.jpg') no-repeat -9999px -9999px,
+        url('fileadmin/img-fliesen/AGP_Fliesen_Sub4.jpg') no-repeat -9999px -9999px,
+        url('fileadmin/img-fliesen/AGP_Fliesen_Sub5.jpg') no-repeat -9999px -9999px;
+}
+</style>
+<div class="preload-images"></div>
