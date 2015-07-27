@@ -1,0 +1,44 @@
+
+# typo3 config file for contact form element
+
+class = kontaktanfrage
+enctype = multipart/form-data
+method = post
+prefix = tx_form
+confirmation = 0
+postProcessor {
+	1 = mail
+	1 {
+		recipientEmail = mthjn2@gmail.com
+		senderEmailField = email
+		subject = Kontaktanfrage
+		message {
+			success = TEXT
+			success {
+				value =
+            <p>Alles hat geklappt! Danke.</p>
+			}
+		}
+	}
+}
+10 = TEXTLINE
+10 {
+	name = name
+	label {
+		value = Ihr Name
+	}
+}
+20 = TEXTAREA
+20 {
+	cols = 40
+	rows = 5
+	name = nachricht
+	label {
+		value = Ihre Nachricht
+	}
+}
+30 = SUBMIT
+30 {
+	name = 4
+	value = Senden
+}
