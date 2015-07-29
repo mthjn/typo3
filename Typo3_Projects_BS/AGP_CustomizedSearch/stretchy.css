@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.sufu, 
+.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-sword{width:auto!important;margin:0 auto;}
+/* Helper functions */
+input, textarea, select {
+  border: 2px solid #000329;
+  padding: .1em .3em;
+  font: inherit;
+  background: transparent;
+  color: inherit;
+  box-sizing: border-box; }
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+a {
+  color: inherit; }
