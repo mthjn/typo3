@@ -1,0 +1,35 @@
+/**
+*
+*  Kategories
+*
+**/
+
+ /* Leistungen */
+#p14 #content{
+    background: url('/try/fileadmin/kategorie/AGP_Kategorien.jpg');
+    background-size: cover;
+}
+  /* Angebote */
+#p35 #content{
+    background: url('/try/fileadmin/kategorie/AGP_Kategorien3.jpg');
+    background-size: cover;
+}
+  /*Projekte*/
+#p34 #content{
+    background: url('/try/fileadmin/kategorie/AGP_Kategorien1.jpg');
+    background-size: cover;
+}
+#content .col-md-3>nav {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    padding: 20px;
+    background: rgba(255,255,255,0.7);
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    z-index: 3;
+}

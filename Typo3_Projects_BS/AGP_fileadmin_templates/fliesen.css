@@ -1,0 +1,10 @@
+#slimpanel{
+-webkit-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+-moz-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+-ms-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+-o-transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+transition: all 1s cubic-bezier(.91,.1,.48,1.04);
+}
+.shift {left:-60px!important}
+.shiftslim{left:0!important}
+

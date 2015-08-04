@@ -1,0 +1,63 @@
+/**
+*
+*  Mein Bauzentrum
+*
+**/
+.blue {
+ color: #124190!important;
+ }
+.grey {
+  color: #a1a1a1!important;
+ }
+.border{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.border-top{
+  border-top: 1px solid #ccc;
+  margin-bottom:25px;
+}
+.margin {
+margin-top: 35px;
+margin-bottom: 35px;
+}
+.center {
+text-align:center;
+}
+.nopadd {
+ padding: 2px;
+}
+.top20{margin-top:20px}
+.bauseparator p {
+font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+margin-top: 35px;
+margin-bottom: 35px;
+padding: 0 25px;
+text-align: center;
+}
+.topleft {
+ font-family: 'Roboto';
+ font-size: 15px;
+ font-weight: 400;
+}
+img {
+ width:100%;
+}    
+.meta-section,.meta-section .language{background:white}
+.meta-section .active a, .meta-section a {color:black}
+.copyright{display:none}
+/**
+* Navigation active hack
+**/
+.dropdown-menu li.active:nth-of-type(2) a {
+border:none!important;
+}
+/**
+*
+* Media MIN
+*
+**/
+
+@media(min-width:990px){.language {position: relative;left: 90px}}

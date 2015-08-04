@@ -8,17 +8,56 @@ body{
 transition: all 1s ease-in-out;
 -webkit-transition: all 1s ease-in-out;
 }
-
-#content{min-height: 900px;background:url('http://agp-web.witwerk.de/try/fileadmin/projekte/AGP_Fliesen.png');
-background-size:cover; background-repeat: no-repeat; 
+.body-bg {
+  height: 995px;
 }
+footer {
+  position: relative;
+  top: -100px;
+}
+/* navbar  */
+.glyphicon-list,.glyphicon-remove{
+z-index:2;
+}
+.navbar-header-main .navbar-brand {
+  background: transparent!important;
+}
+.navbar-main {
+  background:#000329;
+}
+.navbar-default .navbar-nav>li>a {
+  color:white!important;
+}
+.dropdown {
+  color: white;
+}
+#content{min-height: 900px;
+background:url('http://agp-web.witwerk.de/try/fileadmin/img-fliesen/AGP_Fliesen_Sub0.jpg');
+background-size:cover; background-repeat: no-repeat;
+
+position: relative;
+top: -100px;
+
+}
+
+
+/* 
+* Projekte semitransp overlay 
+*/
+.main-section:after {
+content:"";position:absolute;top:0;left:0;z-index:0;width:100%;height:100%;background-color:rgba(0,0,0,0.3)
+}
+.bgtoggle:after {background-color:rgba(255,255,255,0.1)}
+
+
 #prodoverlay {text-align:center;min-height:650px;position:relative;top:40%}
+
 /*    Fliesen        */
 #fliesen {
 -webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out;
 font-size: 12px;font-family: Roboto;background:white;padding:5px 30px;
 letter-spacing: 0.02em;max-width: 485px;margin-left:15px;height: 450px;overflow-y: scroll;
-position: relative;z-index: 999;
+position: relative;z-index:5;
 }
 #fliesen ul {padding: 15px}
 #fliesen ul li {list-style-image: url('http://agp-web.witwerk.de/try/fileadmin/projekte/dot.png');padding: 5px}
@@ -27,21 +66,50 @@ position: relative;z-index: 999;
 #fliesen > div{display:none}
 #fliesen > div:target{display:block}
 
-#plus{cursor:pointer;position:relative;top:300px;width:30px;overflow: hidden}
-#plusminus {width:60px;position:relative}
+/* - responsive */
+@media(max-width:300px){
+#fliesen{margin-left:0!important;margin-right:50px}
+#slimpanel{left:auto!important;right:5px!important}
+}
+@media(max-width:540px){
+#fliesen{margin-left:0!important;margin-right:50px}
+}
+@media(max-width:590px){
+#slimpanel{left:auto!important;right:10px!important}
+}
+@media(max-width:995px){
+#slimpanel{position:absolute;left:90%}
+}
+@media(max-width:1200px){
+#fliesen{margin-right:50px}
+}
 
+#plus{cursor:pointer;position:relative;z-index:2;top:350px;width:60px;overflow: hidden}
+#plusminus {width:120px;position:relative}
+
+/**
+* Breadcrumbs for Projekte Unterseiten
+**/
+.breadcrumb-section .breadcrumb {
+color: white!important;
+position:absolute;
+z-index:2;
+}
 .breadcrumb-section, .breadcrumb,.breadcrumb a {
-display:none;
+  display:block;
   background-color: transparent!important;
   border: 0;
   margin-bottom: 0!important;
-  font-size: 10px!important;
+  font-size: 15px!important;
   color: white!important;
-  position:absolute;
+  
+}
+.breadcrumb>.active{
+color:white;
 }
 
 /*      SlimPanel     */
-#slimpanel{max-width:50px;margin: 22px -97px;}
+#slimpanel{max-width:50px;margin-top:2px;position:absolute;z-index:2;left:90%}
 #slimpanel img{
 /*
 border-top: 2px solid white;
@@ -58,5 +126,15 @@ border-right: 2px solid white;
 #slimpanel div:not(#last) {
   border-bottom: 2px solid white;
 }
+.select_item{-webkit-transition: all 0.8s ease-in-out 0s,opacity 0.25s ease-in-out;
+  -o-transition: all 0.8s ease-in-out 0s,opacity 0.25s ease-in-out;
+  transition: all 0.8s ease-in-out 0s,opacity 0.25s ease-in-out;}
+.select_item img:hover{outline: 2px solid #ef7c00;position: relative;z-index: 1}
 
-
+/* navbar main */
+/*  background-color: #000329;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  padding: 30px 0;
+  */

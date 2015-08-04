@@ -6,15 +6,5 @@ function toggle_visibility(id) {
        else
           e.style.visibility= 'visible';
 
-document.getElementById("plusminus").style.left = "-30px";
+document.getElementById("plusminus").style.left = "-60px";
     } 
-/*
-position: relative;
-left: -30px;
-
-onclick="document.getElementById('plusminus').style.left = '-30px'"
-width="60px"
-
-window.location.hash='back';
-
-*/    
