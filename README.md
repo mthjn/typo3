@@ -15,12 +15,16 @@ go to your browser to install
 ```
 
 ---
-#### Project screenshots  
+#### Project screenshots   
+  
 Home  
 ![home](https://github.com/mthjn/typo3/blob/master/Typo3_Projects_BS/AGP_Screenshots/AGP_Homepage.png)  
+  
 Main categories (accesible only via breadcrumbs)  
-![uppercat](https://github.com/mthjn/typo3/blob/master/Typo3_Projects_BS/AGP_Screenshots/AGP_Projekte_ObereSeite-Navi.jpg)  
+![uppercat](https://github.com/mthjn/typo3/blob/master/Typo3_Projects_BS/AGP_Screenshots/AGP_Projekte_ObereSeite-Navi.jpg) 
+  
+The fancy box  
 ![box](https://github.com/mthjn/typo3/blob/master/Typo3_Projects_BS/AGP_Screenshots/AGP_ProjekteFliesen.jpg)  
+  
+Fancy boxed invisibled  
 ![box clsed](https://github.com/mthjn/typo3/blob/master/Typo3_Projects_BS/AGP_Screenshots/AGP_ProjekteB.png)  
-![menu](https://github.com/mthjn/typo3/blob/master/Typo3_Projects_BS/AGP_Screenshots/AGP_MenuMattierung.jpg)  
-
