@@ -1,8 +1,8 @@
 
 ### Adding a new template in bootstrap package  
-+ Add your template in bootstrap_package/Configuration/PageTS/Mod/WebLayout/BackendLayouts
-+ make a nickname for it in bootstrap_package/Resources/Private/Language/Backend.xml
-+ ??? Insert new layout into bootstrap_package/Classes/Hooks/Options/BackendLayoutDataProvider.php
++ Add your template in `bootstrap_package/Configuration/PageTS/Mod/WebLayout/BackendLayouts`
++ make a nickname for it in `bootstrap_package/Resources/Private/Language/Backend.xml`
++ ??? Insert new layout into `bootstrap_package/Classes/Hooks/Options/BackendLayoutDataProvider.php`
   
   
 ```
