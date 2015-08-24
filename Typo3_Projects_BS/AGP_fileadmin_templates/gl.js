@@ -16,10 +16,17 @@
   
   
   $(document).ready(function(){
-   $('.select_item').click(function( ){
-     var ditem = $(this).attr('data-item');
+   $('.select_item').click(function( ){ 
+
+    var ditem = $(this).attr('data-item');
          
      $('.content_item').hide("slow").filter( '[data-item="'+ditem+'"]' ).show("slow");
+
+	var selected = $('.select_item' ).hasClass( "activeitem" );
+	if ( selected !== false && selected !== $(this) ) {
+		 $( '.activeitem' ).removeClass( "activeitem" );
+	 } 
+	$(this).addClass( "activeitem" );
 
      var bgimage;
      

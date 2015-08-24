@@ -7,4 +7,5 @@ transition: all 1s cubic-bezier(.91,.1,.48,1.04);
 }
 .shift {left:-60px!important}
 .shiftslim{left:0!important}
-
+/*breadcrumbs margin alt logo*/
+.breadcrumb-section .breadcrumb {margin-left:35px;}

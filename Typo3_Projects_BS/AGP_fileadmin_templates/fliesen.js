@@ -23,6 +23,14 @@
          
      $('.content_item').hide("slow").filter( '[data-item="'+ditem+'"]' ).show("slow");
 
+	var selected = $('.select_item' ).hasClass( "activeitem" );
+	if ( selected !== false && selected !== $(this) ) {
+		 $( '.activeitem' ).removeClass( "activeitem" );
+	 } 
+	$(this).addClass( "activeitem" );
+
+
+
      var bgimage;
      
      switch( ditem ) {

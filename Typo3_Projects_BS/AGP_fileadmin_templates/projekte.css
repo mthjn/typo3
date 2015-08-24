@@ -66,16 +66,23 @@ position: relative;z-index:5;
 #fliesen > div{display:none}
 #fliesen > div:target{display:block}
 
-/* - responsive */
+/* responsive */
 @media(max-width:300px){
 #fliesen{margin-left:0!important;margin-right:50px}
 #slimpanel{left:auto!important;right:5px!important}
+}
+@media(max-width:350px){
+footer{display:none}
+#content{top:0}
 }
 @media(max-width:540px){
 #fliesen{margin-left:0!important;margin-right:50px}
 }
 @media(max-width:590px){
 #slimpanel{left:auto!important;right:10px!important}
+}
+@media(max-width:770px){
+
 }
 @media(max-width:995px){
 #slimpanel{position:absolute;left:90%}
@@ -111,14 +118,8 @@ color:white;
 /*      SlimPanel     */
 #slimpanel{max-width:50px;margin-top:2px;position:absolute;z-index:2;left:90%}
 #slimpanel img{
-/*
-border-top: 2px solid white;
-border-left: 2px solid white;
-border-right: 2px solid white;
-
-*/
 }
-  #slimpanel> div:last-of-type {
+#slimpanel> div:last-of-type {
     border-right: 1px solid;
     border-color: pink;
 }
@@ -129,12 +130,13 @@ border-right: 2px solid white;
 .select_item{-webkit-transition: all 0.8s ease-in-out 0s,opacity 0.25s ease-in-out;
   -o-transition: all 0.8s ease-in-out 0s,opacity 0.25s ease-in-out;
   transition: all 0.8s ease-in-out 0s,opacity 0.25s ease-in-out;}
-.select_item img:hover{outline: 2px solid #ef7c00;position: relative;z-index: 1}
+.select_item img:hover, .activeitem img {outline: 2px solid #ef7c00;position: relative;z-index: 1}
 
-/* navbar main */
-/*  background-color: #000329;
-  height: 100px;
-  position: absolute;
-  right: 0;
-  padding: 30px 0;
-  */
+/**
+* iPad main navbar
+**/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
+ .navbar-main {
+left:29%!important;padding:30px 29px 9px 1%!important;width:69%!important
+ }
+}

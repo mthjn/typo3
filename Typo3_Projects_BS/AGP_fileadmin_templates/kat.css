@@ -33,3 +33,20 @@
     letter-spacing: 0.04em;
     z-index: 3;
 }
+/**
+*   MEDIA
+*
+*
+**/
+@media (max-width: 450px) {
+#p23 ul.list>li {
+  line-height: 45px;
+ }
+#p22 ul.list>li {
+  line-height:30px;
+}
+
+}
+
+
+
